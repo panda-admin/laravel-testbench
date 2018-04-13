@@ -1,9 +1,11 @@
 <?php
 
+use App\Articles;
+
 return [
     'articles' => [
         'label' => 'Articles',
-        'model'=> 'App\\Articles',
+        'model'=> Articles::class,
         'fields'=> [
             'title'=> [
                 'label'=> 'Title',
