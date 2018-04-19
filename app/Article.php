@@ -4,7 +4,7 @@ namespace App;
 
 use PandaAdmin\Laravel\BaseModel;
 
-class Articles extends BaseModel
+class Article extends BaseModel
 {
 
 }

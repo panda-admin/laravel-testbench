@@ -1,23 +1,22 @@
 <?php
 
-use App\Articles;
-
 return [
     'articles' => [
         'label' => 'Articles',
-        'model'=> Articles::class,
+        'model'=> '\\App\\Article',
         'fields'=> [
             'title'=> [
-                'label'=> 'Title',
-                'type' => 'text'
+                'label' => 'Title',
+                'type' => 'text',
+                'required' => true
             ],
-            'content'=> [
-                'label'=> 'Content',
-                'type'=> 'html'
+            'content' => [
+                'label' => 'Content',
+                'type' => 'html'
             ],
-            'cover'=> [
-                'label'=> 'Cover',
-                'type'=> 'image'
+            'cover' => [
+                'label' => 'Cover',
+                'type' => 'image'
             ]
         ]
     ]
